@@ -1,0 +1,9 @@
+SELECT
+    System.Timestamp() AS EventTime, AVG(eventHubInput.TempratureCelcius)
+INTO
+    BLOBOutput
+FROM
+    eventHubInput
+WHERE eventHubInput.TempratureCelcius IS NOT NULL
+GROUP BY TumblingWindow (second, 5)
+HAVING Avg(eventHubInput.TempratureCelcius) > 100
