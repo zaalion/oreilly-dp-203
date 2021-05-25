@@ -1,0 +1,10 @@
+1- What is the difference between Azure Synapse Dedicated SQL pool and Serverless pool?
+>>> https://docs.microsoft.com/en-us/azure/synapse-analytics/sql/overview-features
+>>> https://docs.microsoft.com/en-us/azure/synapse-analytics/sql/on-demand-workspace-overview
+>>> https://docs.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-what-is
+
+2- What is the difference between CosmosDB (Table API) and Azure Storage Tables?
+>>> https://docs.microsoft.com/en-us/azure/cosmos-db/table-introduction
+
+3- What are the Data Lake Gen2 benefits? (comparing to Azure Blob Storage)
+>>> https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction
