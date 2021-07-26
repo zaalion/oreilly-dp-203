@@ -6,7 +6,7 @@ CREATE MASTER KEY;
 CREATE DATABASE SCOPED CREDENTIAL ADLSCreds1
 WITH
 	IDENTITY = 'Storage Account Key' ,
-    SECRET = ''
+    SECRET = 'ZMOqAUNsEOXzuCMJUswVUThkXh9VQxWHojj1ZP0Zd0a1VkeLXlArkyJOWtLCe60assUIya45gc5mWE80CSPflQ=='
 ;
 
 -- https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction-abfs-uri

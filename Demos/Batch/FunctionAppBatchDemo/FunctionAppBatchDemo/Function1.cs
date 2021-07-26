@@ -25,12 +25,12 @@ namespace FunctionAppBatchDemo
         {
             BatchSharedKeyCredentials cred = 
                 new BatchSharedKeyCredentials(
-                    "https://batchdemo04.canadaeast.batch.azure.com",
-                    "batchdemo04",
-                    "wdgSjjSv6W81aqtW9V56D9GKHPYBjmmrUou9iyfo1SxcmXxsmm0J7nzKoy/FTmR5LHFETEDnUJe/xgFwB7cvGQ==");
+                    "https://batchordemo01.canadacentral.batch.azure.com",
+                    "batchordemo01",
+                    "G3khAbYOOIHlRVvYytKv9lBLWhgf8lTAC98ChOgAeMBjgAE45eUph9YbEcbeqxUCbhCodgb76pFfFofFgJytTA==");
             const string JobId = "ocr-job";
             const string InputContainerConnectionString =
-                "DefaultEndpointsProtocol=https;AccountName=storagebatchdemo05;AccountKey=tRGKyzKNjRJpN6Cq8wiisk+dxEG6XhewKSlzSZ9eOC9POotArZnhBccs4/ux+Dq8ESmFS1vcf7zkLiIIpPg0Tg==;EndpointSuffix=core.windows.net";
+                "DefaultEndpointsProtocol=https;AccountName=storagebatchdemoor01;AccountKey=IJ1OmRE+27NgqhXYPDJWguzygsR6lQW21KHwnwCJdNGvwBD5w8v44HWoQ4NeFTS0lo4lgZ3MwmkC0tSA2apQug==;EndpointSuffix=core.windows.net";
             const string inputContainerName = "input";
             const string OutputContainerSAS =
                 "https://storagebatchdemo05.blob.core.windows.net/output?sp=rw&st=2021-05-22T22:02:37Z&se=2021-05-23T06:02:37Z&spr=https&sv=2020-02-10&sr=c&sig=KVTfSN4bGtu7%2B%2BSnBnfjdQAvTZmASyySoU65b4UEErM%3D";
