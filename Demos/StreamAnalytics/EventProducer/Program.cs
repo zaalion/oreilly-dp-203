@@ -13,8 +13,8 @@ namespace ConsoleApp18
         private static EventHubClient eventHubClient;
 
         private const string EventHubConnectionString =
-            "Endpoint=sb://eventhubnsordemo01.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=W4+wCXjOAkpTZh0f2Bmhl1hDXvH/uozXhcLLo8OuAKM=";
-        private const string EventHubName = "hub01";
+            "Endpoint=sb://evordemo01.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=kXp2I8uVagE58nWga6KrQiYqOS1Wb2Z7rm8u20PCwjE=";
+        private const string EventHubName = "temphub";
 
         // list of sent messages
         private static List<TempratureInfo> messages = new List<TempratureInfo>();
