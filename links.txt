@@ -1,3 +1,0 @@
-https://docs.microsoft.com/en-us/azure/cosmos-db/mongodb/mongodb-introduction
-https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/overview
-https://docs.microsoft.com/en-ca/azure/databricks/clusters/configure#cluster-mode
