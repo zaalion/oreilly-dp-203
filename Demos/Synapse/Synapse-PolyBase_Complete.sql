@@ -3,17 +3,17 @@
 
 CREATE MASTER KEY;
 
-CREATE DATABASE SCOPED CREDENTIAL ADLSCreds1
+CREATE DATABASE SCOPED CREDENTIAL ADLSCreds
 WITH
 	IDENTITY = 'Storage Account Key' ,
-    SECRET = 'ZSsPYzvB0LOlniMbREziY5wf+AQNnuBAc4QToRcGO4a16nybdtDzgTh40N1j3P3wQP9O4zZWGtmXeBRW0p9HcQ=='
+    SECRET = 'QHc7JRG/sH+0w/Drx19fARz+Pp4kxX5JRJFBg/I2gz5vbK4XExuLwd47NF/8DqfrpYRuLwHxfGlN+ASt4//6SQ=='
 ;
 
 -- https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction-abfs-uri
-CREATE EXTERNAL DATA SOURCE ADLG2Source
+CREATE EXTERNAL DATA SOURCE ADLGSource
 WITH
-  ( LOCATION = 'abfss://logs@datalakegen02or.dfs.core.windows.net/sample-csv.csv' ,
-   CREDENTIAL = ADLSCreds1,
+  ( LOCATION = 'abfss://pplsource@dp203datalakeor.dfs.core.windows.net/people.csv' ,
+   CREDENTIAL = ADLSCreds,
     TYPE = HADOOP
  );
 
@@ -30,7 +30,7 @@ WITH (
 );
 
 
-CREATE EXTERNAL TABLE dbo.MyExternalTable (
+CREATE EXTERNAL TABLE dbo.People (
 	   [firstname] NVARCHAR(256) NULL
       ,[lastname] NVARCHAR(256) NULL
       ,[gender] NVARCHAR(256) NULL
@@ -39,12 +39,12 @@ CREATE EXTERNAL TABLE dbo.MyExternalTable (
 )
 WITH (
     LOCATION='../',
-    DATA_SOURCE=ADLG2Source,
+    DATA_SOURCE=ADLGSource,
     FILE_FORMAT=csvFile,
 	REJECT_TYPE = value,
 	REJECT_VALUE = 2
 );
 
 
-select top 10 * from dbo.MyExternalTable
+select top 10 * from dbo.People
 
