@@ -1,0 +1,60 @@
+DP-203 Additional Resources
+---------------------------
+
+Microsoft Azure Fundamentals (AZ-900) Certification Course (Reza Salehi)
+------------------------------------------------------------------------
+https://learning.oreilly.com/course/microsoft-azure-fundamentals/0636920797234/
+
+Browse Azure Architectures
+--------------------------
+https://learn.microsoft.com/en-us/azure/architecture/browse/
+
+Create, develop, and maintain Synapse notebooks in Azure Synapse Analytics
+--------------------------------------------------------------------------
+https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-development-using-notebooks
+
+What is Azure Databricks?
+-------------------------
+https://learn.microsoft.com/en-us/azure/databricks/introduction/
+
+Geospatial data processing and analytics
+----------------------------------------
+https://learn.microsoft.com/en-us/azure/architecture/example-scenario/data/geospatial-data-processing-analytics-azure
+
+Course GitHub Repository
+------------------------
+https://github.com/zaalion/oreilly-dp-203
+
+Transact-SQL features supported in Azure Synapse SQL
+----------------------------------------------------
+https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/overview-features
+
+Analyze data with a serverless SQL pool
+---------------------------------------
+https://learn.microsoft.com/en-us/azure/synapse-analytics/get-started-analyze-sql-on-demand
+
+Quickstart: Use serverless SQL pool
+-----------------------------------
+https://learn.microsoft.com/en-us/azure/synapse-analytics/quickstart-serverless-sql-pool
+
+CREATE DATABASE SCOPED CREDENTIAL (Transact-SQL)
+------------------------------------------------
+https://learn.microsoft.com/en-us/sql/t-sql/statements/create-database-scoped-credential-transact-sql?view=sql-server-ver16
+
+Analyze with Apache Spark
+-------------------------
+https://learn.microsoft.com/en-us/azure/synapse-analytics/get-started-analyze-spark
+
+Event Hubs output from Azure Stream Analytics
+---------------------------------------------
+https://learn.microsoft.com/en-us/azure/stream-analytics/event-hubs-output
+
+
+
+
+
+
+
+
+
+
